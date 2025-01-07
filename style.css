@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: #232830;
-    text-align: center;
+    /*text-align: center;*/
 }
 
 .navbar{
@@ -48,6 +48,7 @@ ul{
     font-style: italic;
     font-size: 71px;
     line-height: 85.2px;
+    text-align: center;
 }
 
 .header h4{
@@ -56,6 +57,7 @@ ul{
     font-weight: 400;
     font-size: 29px;
     line-height: 43.5px;
+    text-align: center;
 }
 
 hr{
@@ -77,6 +79,10 @@ hr{
     justify-content: center;
 }
 
+/*.cards{
+    text-align: center;
+}*/
+
 .card{
     background-color: #FFFFFF;
     border: 1px solid #252930;
@@ -85,6 +91,7 @@ hr{
     border-radius: 22px;
     top: 403px;
     left: -309px;
+    display: inline-block;
 }
 
 .image{
@@ -94,9 +101,10 @@ hr{
     top: 429px;
     left: -282.54px;
     margin-top: 30px;
+    padding-left: 25px;
 }
 
-.card h4{
+.card_header{
     width: 337.08px;
     height: 58px;
     top: 622px;
@@ -110,7 +118,7 @@ hr{
     margin-left: 25px;
 }
 
-.card p{
+.card_paragraph{
     font-family: 'Poppins';
     font-weight: 400;
     font-size: 16px;
@@ -124,12 +132,18 @@ hr{
     margin-left: 25px;
 }
 
-.card ul{
-    display: flex;
-    width: 234.04px;
-    height: 24px;
-    top: 1265px;
-    left: -283px;
-    color: #0F1217;
+.card_groups{
+    padding-left: 25px;
 }
 
+.card_group{
+    display: inline-block;
+    color: #0F1217;
+    text-align: justify;
+    /*margin-right: 10px;  10px space between the paragraphs */
+}
+
+.card_group:not(:last-child)::after {
+    content: "•"; /* The dot between the paragraphs */
+    margin: 0 10px; /* 10px space around the dot */
+}
