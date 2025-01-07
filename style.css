@@ -147,3 +147,57 @@ hr{
     content: "•"; /* The dot between the paragraphs */
     margin: 0 10px; /* 10px space around the dot */
 }
+
+.footer{
+    margin-bottom: 55px;
+}
+
+.left_footer{
+    float: left;
+}
+
+.right_footer{
+    float: right;
+    background-color: #4699E0;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.right_footer_text{
+    color: #FFFFFF;
+    font-family: 'Source Sans Pro';
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.left_footer_text{
+    color: #FFFFFF;
+    font-family: 'Source Sans Pro';
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37.71px;
+    width: 161px;
+    height: 38px;
+    top: 2143px;
+    left: -308px;
+    margin-right: 5px;
+}
+
+.left_footer_box{
+    background-color: #4699E0;
+    width: 130px;
+    height: 34px;
+    top: 2145px;
+    left: -131px;
+    border-radius: 5px;
+    font-size: 19px;
+    font-weight: 600;
+    color: #FFFFFF;
+    font-family: 'Source Sans Pro';
+    padding: 5px;
+}
+
+.footer_image{
+    height: 16px;
+    width: 20px;
+}
